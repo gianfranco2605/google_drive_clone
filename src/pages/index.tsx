@@ -1,7 +1,9 @@
 import Head from "next/head";
-import Button from "@/components/Button";
+
+import HomeComponent from "@/components/Home";
 
 export default function Home() {
+
   return (
     <>
       <Head>
@@ -11,11 +13,12 @@ export default function Home() {
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c]">
         <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
-          <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
-            Create <span className="text-[hsl(280,100%,70%)]">T3</span> App
+          {/* <h1 className="text-5xl text-center font-extrabold tracking-tight text-white sm:text-[5rem]">Benvenuto 
+            <span className="text-[hsl(280,100%,70%)]"> {session?.user.name}</span>
           </h1>
-        <Button btnClass="btn-primary" title="Sign Up" />
+          <img src={session?.user.image} alt="imagen" width="80px" height="80px" className="rounded-full" /> */}
         </div>
+        < HomeComponent />
       </main>
     </>
   );
